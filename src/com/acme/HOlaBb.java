@@ -2,6 +2,8 @@ package com.acme;
 
 public class HOlaBb {
     public static void main(String[] args) {
-        System.out.println("HOla bb");
+        Mensaje msg = new Mensaje();
+        String nombre = msg.SolicitarDatos("escribe tu nombre: ");
+        msg.saludar(nombre);
     }
 }
